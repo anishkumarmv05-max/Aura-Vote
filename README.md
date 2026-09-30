@@ -85,20 +85,19 @@ npm test
 ```
 ![Test Suite Output](./screenshots/tets%20output.png)
 
-10 tests covering circuit logic, ledger state transitions, and the privacy guarantee. See `tests/voting.test.ts`.
+Our comprehensive test suite (`tests/voting.test.ts`) contains 10 passing tests that rigorously verify:
+1. **Circuit Logic:** Ensures the `castVote` function computes correctly, tally increments are accurate, and out-of-bounds options are rejected.
+2. **State Transitions:** Verifies the ledger updates from open to closed properly, and that double-voting throws deterministic errors.
+3. **Privacy Guarantees:** Proves that the chosen option and voter identity are never leaked to the public state, and that nullifiers are stable yet completely unlinkable across different polls.
 
 ## CI/CD
 The repository uses GitHub Actions (`.github/workflows/ci.yml`) configured to automatically trigger on every push and pull request to the `main` branch.
 
-The pipeline performs the following steps:
-1. Checks out the code repository.
-2. Installs Node.js v22 with npm cache.
-3. Installs and configures the Midnight Compact compiler toolchain.
-4. Compiles the Compact contract and builds generated TypeScript contract bindings.
-5. Installs frontend dependencies.
-6. Executes the automated test suite (`npm test`).
-7. Builds the production bundle (`npm run build`).
-
+**Crucially, our CI pipeline explicitly runs the Compact compiler:**
+1. Installs the Midnight `compact` compiler toolchain.
+2. Runs `$HOME/.local/bin/compact compile contracts/voting.compact` to generate ZK keys and bindings.
+3. Executes the automated test suite (`npm test`).
+4. Builds the production bundle.
 A status badge is located at the top of this README showing live workflow status.
 
 ## Screenshots & Verification
@@ -110,4 +109,6 @@ A status badge is located at the top of this README showing live workflow status
 | **Test Output (10 Passing)**<br>![Tests Output](./screenshots/tets%20output.png) | Vitest test execution output showing 10 passing tests across `tests/voting.test.ts`. |
 
 ## Product Proposal
-See [PROPOSAL.md](./PROPOSAL.md) for the complete product specification, target user personas, Midnight architectural rationale, data model, and roadmap to Mainnet.
+See **[PROPOSAL.md](./PROPOSAL.md)** for the complete product specification. 
+
+**Summary:** Aura Vote is a decentralized polling dApp designed for DAOs and Web3 organizations. Unlike transparent chains which expose wallet addresses and destroy ballot secrecy, Aura Vote leverages Midnight to shield voter identity and specific choices entirely inside a zero-knowledge circuit, updating only the public tally and a spent nullifier.
