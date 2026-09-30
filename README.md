@@ -1,5 +1,5 @@
 # Midnight Ballot
-[![CI](https://github.com/anishkumarmv05-max/vote-ballot/actions/workflows/ci.yml/badge.svg)](https://github.com/anishkumarmv05-max/vote-ballot/actions/workflows/ci.yml)
+[![CI](https://github.com/anishkumarmv05-max/Aura-Vote/actions/workflows/ci.yml/badge.svg)](https://github.com/anishkumarmv05-max/Aura-Vote/actions/workflows/ci.yml)
 > Anonymous ballots, publicly verifiable tallies — private voting on Midnight.
 
 ## Live Demo
