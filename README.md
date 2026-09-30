@@ -6,7 +6,7 @@
 https://aura-vote-ten.vercel.app/
 
 ## Demo Video
-?? [Watch the 1-Minute Walkthrough Video (Google Drive)](https://drive.google.com/file/d/11DSwY501LSTGWBHD1wtN1okoUSN2FKIN/view?usp=sharing)
+🎥 [Watch the 1-Minute Walkthrough Video (Google Drive)](https://drive.google.com/file/d/18IdV02ZNmUdYlnRcFYhxSIR2VyFPdkfg/view?usp=sharing)
 
 ## Contract Address
 | Network  | Address                          |
