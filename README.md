@@ -15,7 +15,7 @@ https://aura-vote-ten.vercel.app/
 
 - 🔗 **Contract on Midnight Explorer:** [View Preprod Contract](https://preprod.midnightexplorer.com/contracts/0x6bb081edebfb8111524a9fb09db24aafc0c11c8fe93ca40172433308b496f49e)
 
-![Contract Explorer](./screenshots/contract-address.png)
+![Contract Explorer](./screenshots/contract.png)
 
 ## What This Does
 Midnight Ballot lets anyone vote on a fixed set of options without revealing *which* option they chose or linking their identity to their ballot, while still producing a tally anyone can independently verify by reading the public ledger.
@@ -24,7 +24,7 @@ Midnight Ballot lets anyone vote on a fixed set of options without revealing *wh
 - A per-poll **nullifier**, derived from the voter's private secret, is published to stop double voting — without revealing the voter's identity or linking their votes across different polls.
 - The chosen option is used **only inside the zero-knowledge circuit** to increment the matching public counter; it's never written to the ledger or emitted in any event.
 
-![Product UI](./screenshots/product-ui.png)
+![Product UI](./screenshots/product%20ui.png)
 
 ## Privacy Model
 - **PUBLIC:**
@@ -83,7 +83,7 @@ npm run dev
 ```bash
 npm test
 ```
-![Test Suite Output](./screenshots/test-output.png)
+![Test Suite Output](./screenshots/tets%20output.png)
 
 10 tests covering circuit logic, ledger state transitions, and the privacy guarantee. See `tests/voting.test.ts`.
 
@@ -105,9 +105,9 @@ A status badge is located at the top of this README showing live workflow status
 
 | Screenshot | Description |
 | :--- | :--- |
-| **Product UI**<br>![Product UI](./screenshots/product-ui.png) | Interactive dApp interface with live Midnight wallet integration, ballot selection, ZK proof generation, and verification status. |
-| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract-address.png) | Midnight Explorer contract page showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0x6bb081edebfb8111524a9fb09db24aafc0c11c8fe93ca40172433308b496f49e) |
-| **Test Output (10 Passing)**<br>![Tests Output](./screenshots/test-output.png) | Vitest test execution output showing 10 passing tests across `tests/voting.test.ts`. |
+| **Product UI**<br>![Product UI](./screenshots/product%20ui.png) | Interactive dApp interface with live Midnight wallet integration, ballot selection, ZK proof generation, and verification status. |
+| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract.png) | Midnight Explorer contract page showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0x6bb081edebfb8111524a9fb09db24aafc0c11c8fe93ca40172433308b496f49e) |
+| **Test Output (10 Passing)**<br>![Tests Output](./screenshots/tets%20output.png) | Vitest test execution output showing 10 passing tests across `tests/voting.test.ts`. |
 
 ## Product Proposal
 See [PROPOSAL.md](./PROPOSAL.md) for the complete product specification, target user personas, Midnight architectural rationale, data model, and roadmap to Mainnet.
