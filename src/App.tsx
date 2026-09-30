@@ -6,7 +6,7 @@ import { useVotingPoll } from "./hooks/useVotingPoll";
 import { PrivacyExplainer } from "./components/PrivacyExplainer";
 
 const CONTRACT_ADDRESS =
-  import.meta.env.VITE_CONTRACT_ADDRESS ?? "abc9f04d0ff71bec8e4347f63f0259c2bf68bbd49fd1fb8a18739081e22aab71";
+  import.meta.env.VITE_CONTRACT_ADDRESS ?? "6bb081edebfb8111524a9fb09db24aafc0c11c8fe93ca40172433308b496f49e";
 
 function App() {
   const {
