@@ -61,7 +61,7 @@ export function TallyBoard({
               itemStyle={{ color: 'var(--accent-cyan)' }}
             />
             <Bar dataKey="votes" radius={[0, 4, 4, 0]} maxBarSize={28}>
-              {data.map((entry, index) => (
+              {data.map((_, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Bar>
