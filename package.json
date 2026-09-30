@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest run",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "curl --proto '=https' --tlsv1.2 -LsSf https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh && $HOME/.local/bin/compact update && $HOME/.local/bin/compact compile contracts/voting.compact public/keys && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },

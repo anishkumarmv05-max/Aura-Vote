@@ -3,7 +3,7 @@
 > Anonymous ballots, publicly verifiable tallies — private voting on Midnight.
 
 ## Live Demo
-https://midnight-ballot.vercel.app
+https://aura-vote-ten.vercel.app/
 
 ## Demo Video
 ?? [Watch the 1-Minute Walkthrough Video (Google Drive)](https://drive.google.com/file/d/11DSwY501LSTGWBHD1wtN1okoUSN2FKIN/view?usp=sharing)
