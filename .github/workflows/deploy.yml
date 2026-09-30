@@ -28,13 +28,6 @@ jobs:
           curl --proto '=https' --tlsv1.2 -LsSf https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-      - name: Update & Compile Contract
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          compact update
-          compact compile contracts/voting.compact public/keys
-          compact compile contracts/voting.compact src/services/midnight/managed/voting
 
       - name: Install root dependencies
         run: npm install
